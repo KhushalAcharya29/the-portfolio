@@ -5,17 +5,17 @@ import { Menu, X } from "lucide-react";
 export default function Navbar() {
   const [open, setOpen] = useState(false);
 
-  const links = ["Home", "About", "Skills", "Projects", "Experience", "Contact"];
+  const links = ["Home", "About", "Skills", "Projects", "Contact"];
 
   return (
     <nav className="fixed top-0 w-full z-50 bg-black/60 backdrop-blur-lg border-b border-cyan-500/30 px-6 py-4 flex justify-between items-center">
       {/* Logo */}
       <h1 className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-fuchsia-500 bg-clip-text text-transparent">
-        🚀 Khushal
+        Khushal
       </h1>
 
       {/* Desktop Menu */}
-      <ul className="hidden md:flex space-x-8 text-gray-200">
+      <ul className="hidden md:flex space-x-8 text-gray-200 items-center">
         {links.map((link) => (
           <li key={link}>
             <a
@@ -26,6 +26,17 @@ export default function Navbar() {
             </a>
           </li>
         ))}
+        {/* Resume Button */}
+        <li>
+          <a
+            href="https://drive.google.com/file/d/19s5js3bwUpClPaz-cR8oykKMp4P8-QYr/view?usp=drive_link" // 🔗 replace with your actual resume link
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 py-2 bg-gradient-to-r from-cyan-400 to-fuchsia-500 text-black font-semibold rounded-full hover:opacity-90 transition"
+          >
+            Resume
+          </a>
+        </li>
       </ul>
 
       {/* Mobile Hamburger */}
@@ -54,6 +65,18 @@ export default function Navbar() {
               </a>
             </li>
           ))}
+          {/* Resume Button in Mobile Menu */}
+          <li>
+            <a
+              href="https://drive.google.com/your-resume-link" // 🔗 replace with your actual resume link
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-2 bg-gradient-to-r from-cyan-400 to-fuchsia-500 text-black font-semibold rounded-full hover:opacity-90 transition"
+              onClick={() => setOpen(false)}
+            >
+              Resume
+            </a>
+          </li>
         </motion.ul>
       )}
     </nav>
