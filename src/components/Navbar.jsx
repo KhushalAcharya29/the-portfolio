@@ -29,7 +29,7 @@ export default function Navbar() {
         {/* Resume Button */}
         <li>
           <a
-            href="https://drive.google.com/file/d/19s5js3bwUpClPaz-cR8oykKMp4P8-QYr/view?usp=drive_link" // 🔗 replace with your actual resume link
+            href="https://drive.google.com/file/d/1FPbVJ8laDXPDvRyj-vCE81gmBebOIGFh/view?usp=drive_link" // 🔗 replace with your actual resume link
             target="_blank"
             rel="noopener noreferrer"
             className="px-4 py-2 bg-gradient-to-r from-cyan-400 to-fuchsia-500 text-black font-semibold rounded-full hover:opacity-90 transition"
