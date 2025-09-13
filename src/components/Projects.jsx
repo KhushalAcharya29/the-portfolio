@@ -9,7 +9,7 @@ const projects = [
       "A private social networking platform for college students to connect, collaborate, and share securely.",
     tech: ["Next.js","Tailwind", "MongoDB"],
     img: "/projects/campus.png",
-    demo: "https://your-demo-link.com",
+    demo: "https://campus-connections-asoe.vercel.app/",
   },
   {
     title: "AutoMark",
@@ -25,7 +25,7 @@ const projects = [
     "A developer profile generator that creates shareable cards using GitHub, LeetCode, and Stack Overflow data with a clean UI.",
   tech: ["React", "Tailwind CSS", "Framer Motion"],
   img: "/projects/sourcecard.png",
-  demo: "https://sourcecard.vercel.app", // replace with your deployed link
+  demo: "https://source-card.vercel.app/", // replace with your deployed link
 }
 ];
 
